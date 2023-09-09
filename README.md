@@ -1,6 +1,6 @@
 # CSI-Prediction
 
-# Pytorch code for "Graph Neural Networks-Based User Pairing in Wireless Communication Systems"
+# Pytorch code for "Spectral Temporal Graph Neural Network for massive MIMO CSI Prediction"
 (c) Sharan Mourya, email: sharanmourya7@gmail.com
 ## Introduction
 This repository holds the pytorch implementation of the original models described in the paper
