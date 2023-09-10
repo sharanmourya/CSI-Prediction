@@ -9,10 +9,10 @@ Sharan Mourya, Pavan Reddy, Sai Dhiraj Amuru, "Spectral Temporal Graph Neural Ne
 
 ## Requirements
 - Python >= 3.7
-- [PyTorch >= 1.2](https://pytorch.org/get-started/locally/)
-- [Scipy >= 1.8.0](https://scipy.org/install/)
-- PyTorch Geometric
-- MATLAB
+- [PyTorch >= 1.7.1](https://pytorch.org/get-started/locally/)
+- [Scipy >= 1.5.4](https://scipy.org/install/)
+- Numpy >= 1.19.5
+- Pandas >= 1.1.5
 
 
 ## Steps to follow
