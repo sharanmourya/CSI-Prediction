@@ -30,14 +30,14 @@ parser.add_argument('--decay_rate', type=float, default=0.5)
 parser.add_argument('--dropout_rate', type=float, default=0.5)
 parser.add_argument('--leakyrelu_rate', type=int, default=0.2)
 
-X = torch.load("F:\CSIP\X_512.pt")
-H = torch.load("F:\CSIP\H_512.pt")
-X = X.numpy()
-H = H.numpy()
-# X = X[:,:,0]
-# H = H[:,:,0]
-X = pd.DataFrame(X) 
-X.to_csv("C:\\Users\\ronal\\OneDrive\\Desktop\\StemGNN-master\\dataset\\Uma_512.csv",index=False) 
+# X = torch.load("F:\CSIP\X_512.pt")
+# H = torch.load("F:\CSIP\H_512.pt")
+# X = X.numpy()
+# H = H.numpy()
+# # X = X[:,:,0]
+# # H = H[:,:,0]
+# X = pd.DataFrame(X) 
+# X.to_csv("C:\\Users\\ronal\\OneDrive\\Desktop\\StemGNN-master\\dataset\\Uma_512.csv",index=False) 
 
 #Then, to reload:
 # df = pd.read_csv("testfile")
