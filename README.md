@@ -17,16 +17,12 @@ Sharan Mourya, Pavan Reddy, Sai Dhiraj Amuru, "Spectral Temporal Graph Neural Ne
 
 ## Steps to follow
 
-#### 1) Generate Dataset
+#### 1) Dataset 
 
-Run the file **ChannelGeneration.m** with the require number of users **K** to generate the one-ring channel matrices. Now run the **GraphGeneration.py** to convert the channel matrices to graph type data compatible with Pytorch Geometric. This generates a wireless communication graph with sum rate distance as the edge weights as explained in the paper. 
-
-Note: Make sure to edit the path names in both the files to store the dataset at a convenient location.
+We have provided the channel matrices for Urban Macro (UMa) scenario with code word dimensions of 128 and 256. The channel matrices are according to the 3GPP 3-D channel model and are stored in a **.csv** (for ex: **UMa_128.csv**) file for efficient access by the code. 
 
 #### 2) Training the GNN
-Set the number of users, **K** and the dataset path name in **k_clique_user_pairing.py** as defined in the previous step.
+Set the window size, horizon, dataset name, and other training parameters in **main.py** before running it. After training is finished, store the predicted channel matrices in a convenient location by defining the path in the **handler.py** file.
 
-Now run the file **k_clique_user_pairing.py** to begin training and evaluation...
-
-## Acknowledgement
-This repository is built upon the the [Erdos Goes Neural Pipeline open source code](https://github.com/Stalence/erdos_neu). Thanks Stalence for the amazing work.
+#### 2) Plotting Results
+Run **LSTM_RNN_FNN.ipynb**. This trains the RNN and LSTM models and produces results directly comparing them with the STEM GNN.
