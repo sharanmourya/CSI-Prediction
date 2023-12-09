@@ -25,4 +25,4 @@ We have provided the channel matrices for Urban Macro (UMa) scenario with code w
 Set the window size, horizon, dataset name, and other training parameters in **main.py** before running it. After training is finished, store the predicted channel matrices in a convenient location by defining the path in the **handler.py** file. After trining the GNN, import the saved dataset into STNET repository by cloning [STNet](https://github.com/sharanmourya/Pytorch_STNet) and then running stnet.py to get the final decompressed channel matrices.
 
 #### 3) Plotting Results
-Run **TX_LSTM_RNN.ipynb**. This trains the RNN, LSTM, and transformer models and produces results directly comparing them with the STEM GNN.
+Run **TX_LSTM_RNN.ipynb**. This trains the RNN, LSTM, and transformer models and produces results directly comparing them with the STEM GNN. Only run after importing the decompressed channel matrices obtained in the last step into this file.
