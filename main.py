@@ -62,9 +62,9 @@ test_ratio = 1 - train_ratio - valid_ratio
 train_data = data[:int(train_ratio * len(data))]
 valid_data = data[int(train_ratio * len(data)):int((train_ratio + valid_ratio) * len(data))]
 test_data = data[int((train_ratio + valid_ratio) * len(data)):]
-print(test_data[0])
+# print(test_data[0])
 # tes = H[int((train_ratio + valid_ratio) * len(data)):]
-print(tes[0])
+# print(tes[0])
 torch.manual_seed(0)
 if __name__ == '__main__':
     if args.train:
