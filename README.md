@@ -21,8 +21,8 @@ Sharan Mourya, Pavan Reddy, Sai Dhiraj Amuru, ["Spectral Temporal Graph Neural N
 
 We have provided the compressed channel matrices for Urban Macro (UMa) scenario with code word dimensions of 128 and 256 (512 is provided in the google folder shared here due to its large size). The channel matrices are according to the 3GPP 3-D channel model as specified in 38.901. These matrices are compressed using [STNet](https://github.com/sharanmourya/Pytorch_STNet) and are stored in a **.csv** (for ex: **UMa_128.csv**) file for efficient access by the code. Decompressed channel matrices for various mobilities are available at [Folder](https://drive.google.com/drive/folders/1RPfxECfrHL2oumEzVRQxBvq635p_T2B1?usp=drive_link). However, you can generate your own compressed dataset by sending your channel matrices into the stnet.py file from the STNet repository (make sure to match the dimensions to 32x32x2).
 
-#### 2) Training
+#### 2) Training and Evaluation
 Set the window size, horizon, dataset name, and other training parameters in **main.py** before running it. After training is finished, store the predicted channel matrices in a convenient location by defining the path in the **handler.py** file (lines 94-95). After training the GNN, import the saved dataset into STNet by running **compare.py** with appropriate file path (lines 442-443) to get the final decompressed channel matrices. Store them in a convenient location by changing lines 489-490.
 
 #### 3) Plotting Results
-Run **spectral_eficiency.ipynb** by importing th decompressed channel matrices obtained in the previous step. This step produces the spectral efficiency plots of STEM GNN.
+Run **spectral_eficiency.ipynb** by importing the decompressed channel matrices obtained in the previous step. This step produces the spectral efficiency plots of STEM GNN for various mobilities.
