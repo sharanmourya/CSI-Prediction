@@ -26,3 +26,7 @@ Set the window size, horizon, dataset name, and other training parameters in **m
 
 #### 3) Plotting Results
 Run **spectral_eficiency.ipynb** by importing the decompressed channel matrices obtained in the previous step. This step produces the spectral efficiency plots of STEM GNN for various mobilities.
+
+## Direct Method (without training)
+
+In the shared Google [Folder]([url](https://drive.google.com/drive/folders/1RPfxECfrHL2oumEzVRQxBvq635p_T2B1?usp=drive_link)), there are also predicted channel matrices that are obtained after the training is performed on both STEM GNN and STNet. These predicted matrices can also be directly imported through the file **spectral_eficiency.ipynb** to obtain the spectral efficieny plots of STEM GNN.
