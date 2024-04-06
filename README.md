@@ -5,7 +5,7 @@
 ## Introduction
 This repository holds the pytorch implementation of the original models described in the paper
 
-Sharan Mourya, Pavan Reddy, Sai Dhiraj Amuru, "Spectral Temporal Graph Neural Network for massive MIMO CSI Prediction"
+Sharan Mourya, Pavan Reddy, Sai Dhiraj Amuru, ["Spectral Temporal Graph Neural Network for massive MIMO CSI Prediction"](https://ieeexplore.ieee.org/abstract/document/10457056)
 
 ## Requirements
 - Python >= 3.7
@@ -25,4 +25,4 @@ We have provided the compressed channel matrices for Urban Macro (UMa) scenario 
 Set the window size, horizon, dataset name, and other training parameters in **main.py** before running it. After training is finished, store the predicted channel matrices in a convenient location by defining the path in the **handler.py** file (lines 94-95). After training the GNN, import the saved dataset into STNet by running **compare.py** with appropriate file path (lines 442-443) to get the final decompressed channel matrices. Store them in a convenient location by changing lines 489-490.
 
 #### 3) Plotting Results
-Run **TX_LSTM_RNN.ipynb**. This trains the RNN, LSTM, and transformer models and produces results directly comparing them with the STEM GNN. Only run after importing the decompressed channel matrices obtained in the last step into this file.
+Run **spectral_eficiency.ipynb** by importing th decompressed channel matrices obtained in the previous step. This step produces the spectral efficiency plots of STEM GNN.
