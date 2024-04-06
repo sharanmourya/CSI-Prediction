@@ -15,7 +15,7 @@ Sharan Mourya, Pavan Reddy, Sai Dhiraj Amuru, ["Spectral Temporal Graph Neural N
 - Pandas >= 1.1.5
 
 
-## Steps to follow
+## Steps to follow to obtain Spectra Efficiency plots
 
 #### 1) Dataset 
 
@@ -29,4 +29,4 @@ Run **spectral_eficiency.ipynb** by importing the decompressed channel matrices 
 
 ## Direct Method (without training)
 
-In the shared Google [Folder]([url](https://drive.google.com/drive/folders/1RPfxECfrHL2oumEzVRQxBvq635p_T2B1?usp=drive_link)), there are also predicted channel matrices that are obtained after the training is performed on both STEM GNN and STNet. These predicted matrices can also be directly imported through the file **spectral_eficiency.ipynb** to obtain the spectral efficieny plots of STEM GNN.
+In the shared Google [Folder](https://drive.google.com/drive/folders/1RPfxECfrHL2oumEzVRQxBvq635p_T2B1?usp=drive_link), there are also predicted channel matrices that are obtained after the training is performed on both STEM GNN and STNet. These predicted matrices can also be directly imported through the file **spectral_eficiency.ipynb** to obtain the spectral efficieny plots of STEM GNN.
